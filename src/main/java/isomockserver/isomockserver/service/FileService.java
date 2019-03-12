@@ -1,6 +1,6 @@
 package isomockserver.isomockserver.service;
 
-import isomockserver.isomockserver.model.IsoFields;
+import isomockserver.isomockserver.model.IsoMessageFields;
 import org.jpos.iso.ISOMsg;
 
 import java.io.File;
@@ -25,13 +25,13 @@ public interface FileService {
      * @param file
      * @return file content in iso fields formats
      */
-    IsoFields readFromFile(File file);
+    IsoMessageFields readFromFile(File file);
 
     /**
      * This method is used to convert Iso Fields to Iso Messages
-     * @param isoFields
+     * @param isoMessageFields
      * @return the Iso Message
      */
-    ISOMsg conervtIsoFieldsToIsoMsg(IsoFields isoFields);
+    ISOMsg conervtIsoFieldsToIsoMsg(IsoMessageFields isoMessageFields);
 
 }

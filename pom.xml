@@ -51,6 +51,14 @@
         </dependency>
     </dependencies>
 
+    <repositories>
+        <repository>
+            <id>oracle</id>
+            <name>Oracle repo</name>
+            <url>http://download.oracle.com/maven</url>
+        </repository>
+    </repositories>
+
     <build>
         <plugins>
             <plugin>

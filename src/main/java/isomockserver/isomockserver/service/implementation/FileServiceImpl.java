@@ -1,6 +1,6 @@
 package isomockserver.isomockserver.service.implementation;
 
-import isomockserver.isomockserver.model.IsoFields;
+import isomockserver.isomockserver.model.IsoMessageFields;
 import isomockserver.isomockserver.service.FileService;
 import org.jpos.iso.ISOMsg;
 import org.slf4j.Logger;
@@ -202,12 +202,13 @@ public class FileServiceImpl implements FileService {
     }
 
     @Override
-    public IsoFields readFromFile(File file) {
+    public IsoMessageFields readFromFile(File file) {
+
         return null;
     }
 
     @Override
-    public ISOMsg conervtIsoFieldsToIsoMsg(IsoFields isoFields) {
+    public ISOMsg conervtIsoFieldsToIsoMsg(IsoMessageFields isoMessageFields) {
         return null;
     }
 }
